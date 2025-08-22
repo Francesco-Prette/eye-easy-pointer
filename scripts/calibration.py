@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
-from config import SCREEN_W, SCREEN_H, CALIBRATION_POINTS
+#from configs import SCREEN_W, SCREEN_H, CALIBRATION_POINTS
 
-def show_calibration_dot(idx):
+def show_calibration_dot(idx, SCREEN_W, SCREEN_H, CALIBRATION_POINTS):
     """Create fullscreen black screen with a red calibration dot."""
     calib_screen = np.zeros((SCREEN_H, SCREEN_W, 3), dtype=np.uint8)
     cx, cy = CALIBRATION_POINTS[idx]
